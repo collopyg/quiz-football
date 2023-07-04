@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Football Quiz</title>
+</head>
+
+<body>
+    <header>
+        <h1>Football Quiz</h1>
+        <h2>How good is your football knowledge?</h2>
+    </header>
+
+    <!-- Input the username and game rules -->
+    <section id="username-area" class="name">
+        <h3>To begin the game please enter your username</h3>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required><br>
+            <span role="alert" id="usernameError" aria-hidden="true"></span>
+            <button type="submit" id="submit" class="btn">Submit</button>
+        </form>
+        <h3>Game Rules:</h3>
+        <ul id="steps">
+            <li>Enter your username and then 'Submit'.</li>
+            <li>Select of the three levels that you wish to play.</li>
+            <li>Answer the 10 questions by selecting the your answer.</li>
+        </ul>
+        <h3>Enjoy the Quiz and Good Luck!</h3>
+    </section>
+
+    <!--Display game levels -->
+    <section id="levelchoice-area" class="name">
+        <h3 id="levelchoice-heading">0</h3>
+        <h3>Select your level:</h3>
+        <ul id='question-levels'>
+            <li class='level' onClick='questionChoice(this,0)'>Easy</li>
+            <li class='level' onClick='questionChoice(this,0)'>Medium</li>
+            <li class='level' onClick='questionChoice(this,0)'>Hard</li>
+        </ul>
+    </section>
+
+    <!-- Show the questions and score  -->
+    <section class="name" id="game-area">
+        <div id="quiz-area">
+            <h3 id="question-area">0</h3>
+            <div id="answers-area">
+                <ul id="answers-list">
+                </ul>
+            </div>
+        </div>
+        <div id="question-counter">
+            Level: <span id="level"></span> /
+            Question <span id="current-question">1</span> of <span id="total-questions"></span>
+        </div>
+        <div id="score-area">
+            <span class="correct"><i class="fa-solid fa-check"></i> : <span id="correct-counter">0</span></span>
+            <span class="wrong"><i class="fa-regular fa-circle-xmark"></i> : <span id="wrong-counter">0</span></span>
+        </div>
+    </section>
+
+
+    <footer>
+        <ul class="social-networks">
+            <li>
+                <a href="https://facebook.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Facebook page (opens in a new tab)"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+                <a href="https://twitter.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Twitter page (opens in a new tab)"><i class="fab fa-twitter-square"></i></a>
+            </li>
+            <li>
+                <a href="https://youtube.com" target="_blank" rel="noopener"
+                    aria-label="Visit our YouTube page (opens in a new tab)"><i class="fab fa-youtube-square"></i></a>
+            </li>
+            <li>
+                <a href="https://instagram.com" target="_blank" rel="noopener"
+                    aria-label="Visit our Instagram page (opens in a new tab)"><i class="fab fa-instagram"></i></a>
+            </li>
+        </ul>
+    </footer>
+
+
+</body>
+
+</html>
