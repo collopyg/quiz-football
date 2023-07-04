@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans:wght@300&family=Oswald:wght@300&display=swap');
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-image: url(../images/football-quiz.webp);
+    background-size: cover;
+    background-color: green;
+    font-family: Lato, sans-serif;
+    font-weight: 400;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1,
+h2,
+h3 {
+    font-family: 'Roboto Slab', sans-serif;
+    font-weight: 600;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 100px;
+}
+
+/* game area for styling */
+
+.name {
+    background-color: beige;
+    margin-bottom: 200px;
+    padding: 2rem;
+    border-radius: 2rem;
+    text-align: center;
+    width: 600px;
+}
+
+/* username and instructions */
+
+#username-area input {
+    padding: 0.5rem;
+    margin: 0.3rem;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    font-size: 1.2rem;
+}
+
+#username-area label {
+    padding: 0.5rem;
+    margin: 0.3rem;
+    font-size: 1.2rem;
+}
+
+#instructions {
+    font-size: 1.2rem;
+    font-weight: 500;
+    list-style-type: disc;
+    text-align: left;
+    padding-left: 2rem;
+}
+
+/* Styling for difficulty level choice */
+
+#levelchoice-area {
+    font-size: 1.2rem;
+    display: none;
+}
+
+#levelchoice-area li {
+    padding: 0.5rem;
+    margin: 0.3rem;
+    text-align: center;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}
+
+/* Styling for quiz area */
+
+#game-area {
+    display: none;
+}
+
+#quiz-area {
+    font-size: 1.2rem;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#quiz-area li {
+    padding: 0.5rem;
+    margin: 0.3rem;
+    text-align: center;
+    background-color: whitesmoke;
+    border: 1px solid black;
+    border-radius: 0.5rem;
+}
+
+#question-counter {
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+#score-area {
+    padding: 0.5rem;
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.correct {
+    color: rgb(7, 136, 7);
+}
+
+.wrong {
+    color: rgb(246, 0, 0);
+}
+
+#correct-counter {
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+#wrong-counter {
+    margin-left: 2rem;
+}
+
+/* footer */
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
+    height: 50px;
+    width: 100%;
+    background-color: #B6A48Dff;
+}
+
+footer a {
+    color: whitesmoke;
+    padding: 0.4rem;
+    margin: 0 25px 0 25px;
+    font-size: 1.5rem;
+}
